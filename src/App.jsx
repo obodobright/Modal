@@ -5,6 +5,8 @@ import { useState } from "react/cjs/react.development";
 import Modal from "./Modal/Modal";
 const App = () => {
   const [showModal, setShowModal] = useState(false);
+
+  // function to show modal after three seconds of page loads
   const displayModal = () => {
     setTimeout(() => {
       setShowModal(true);
@@ -18,6 +20,7 @@ const App = () => {
     <div>
       <h1>Hello world</h1>
       <p>center cold </p>
+      {/* To add a button to show the modal */}
       {/* {!showModal && <button onClick={() => setShowModal(true)}>Login</button>} */}
 
       {showModal && (
