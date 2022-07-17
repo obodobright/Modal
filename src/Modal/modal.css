@@ -7,6 +7,8 @@
     background: rgb(0, 0, 0, 0.6);
 }
 
+/* initial push */
+
 .modal {
     max-width: 480px;
     margin: 200px auto;
@@ -15,4 +17,35 @@
     padding: 30px;
     border-radius: 10px;
     color: wheat;
+}
+/* modification */
+.modals {
+    max-width: 480px;
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    /* min-height: 30vh; */
+    /* height: 100%; */
+    /* margin: 120px auto; */
+    margin: 0 auto;
+    /* text-align: center; */
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    color: #0f0738;
+    position: relative;
+    animation: drop 0.5s ease forwards;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(120px);
+    }
+    100% {
+        transform: translateY(110px);
+        opacity: 1;
+    }
 }
